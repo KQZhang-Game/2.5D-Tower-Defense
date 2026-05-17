@@ -1,0 +1,21 @@
+# Unity 可再生成的临时目录
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Visual Studio 等IDE的缓存与生成文件
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db

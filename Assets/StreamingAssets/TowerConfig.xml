@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 炮塔配置表根节点 -->
+<TowerConfigTable>
+    <!-- 减速塔：高台建造 + 球形攻击范围 + 控制型炮塔 -->
+    <TowerConfig>
+        <TowerType>0</TowerType>        <!-- 炮塔类型：0=减速塔 -->
+        <DeployableType>0</DeployableType> <!-- 部署类型：0=高台 -->
+        <AttackRangeShape>1</AttackRangeShape> <!-- 攻击范围：1=球形 -->
+        <MaxHp>150</MaxHp>              <!-- 最大生命值 -->
+        <Defense>8</Defense>            <!-- 防御力 -->
+        <Attack>10</Attack>              <!-- 攻击力 -->
+        <AttackInterval>1.5</AttackInterval> <!-- 攻击间隔（秒） -->
+        <BlockCount>1</BlockCount>      <!-- 可阻挡敌人数量 -->
+        <AttackRangeLength>6</AttackRangeLength> <!-- 攻击范围长度（矩形用） -->
+        <AttackRangeWidth>6</AttackRangeWidth>   <!-- 攻击范围宽度（矩形用） -->
+        <AttackRangeHeight>6</AttackRangeHeight> <!-- 攻击范围高度 -->
+        <AttackRangeRadius>4</AttackRangeRadius> <!-- 攻击范围半径（球形用） -->
+        <RotateSpeed>15</RotateSpeed>   <!-- 炮塔头部旋转速度 -->
+        <DeployCost>20</DeployCost>     <!-- 部署花费金币 -->
+    </TowerConfig>
+
+    <!-- 范围攻击塔：高台建造 + 球形范围 + AOE输出炮塔 -->
+    <TowerConfig>
+        <TowerType>1</TowerType>        <!-- 炮塔类型：1=范围攻击塔 -->
+        <DeployableType>0</DeployableType> <!-- 部署类型：0=高台 -->
+        <AttackRangeShape>1</AttackRangeShape> <!-- 攻击范围：1=球形 -->
+        <MaxHp>200</MaxHp>              <!-- 最大生命值 -->
+        <Defense>10</Defense>           <!-- 防御力 -->
+        <Attack>15</Attack>             <!-- 攻击力 -->
+        <AttackInterval>2.0</AttackInterval> <!-- 攻击间隔（秒） -->
+        <BlockCount>1</BlockCount>      <!-- 可阻挡敌人数量 -->
+        <AttackRangeLength>7</AttackRangeLength>
+        <AttackRangeWidth>7</AttackRangeWidth>
+        <AttackRangeHeight>7</AttackRangeHeight>
+        <AttackRangeRadius>3</AttackRangeRadius>
+        <RotateSpeed>15</RotateSpeed>
+        <DeployCost>30</DeployCost>
+    </TowerConfig>
+
+    <!-- 地面阻挡塔：地面建造 + 矩形范围 + 肉盾阻挡炮塔 -->
+    <TowerConfig>
+        <TowerType>2</TowerType>        <!-- 炮塔类型：2=地面阻挡塔 -->
+        <DeployableType>1</DeployableType> <!-- 部署类型：1=地面 -->
+        <AttackRangeShape>0</AttackRangeShape> <!-- 攻击范围：0=矩形 -->
+        <MaxHp>400</MaxHp>              <!-- 最大生命值 -->
+        <Defense>20</Defense>           <!-- 防御力 -->
+        <Attack>8</Attack>              <!-- 攻击力 -->
+        <AttackInterval>1</AttackInterval>
+        <BlockCount>2</BlockCount>
+        <AttackRangeLength>6</AttackRangeLength>
+        <AttackRangeWidth>6</AttackRangeWidth>
+        <AttackRangeHeight>6</AttackRangeHeight>
+        <AttackRangeRadius>0</AttackRangeRadius>
+        <RotateSpeed>15</RotateSpeed>
+        <DeployCost>25</DeployCost>
+    </TowerConfig>
+</TowerConfigTable>

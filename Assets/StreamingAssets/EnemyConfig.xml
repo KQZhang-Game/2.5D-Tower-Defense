@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 枚举对应int值：
+TowerType：0=减速塔 1=范围攻击塔 2=地面阻挡塔 3=普通怪 4=重甲怪 5=快速怪
+E_Deployable_Type：0=高台 1=地面
+AttackRangeShape：0=矩形 1=球形
+-->
+<EnemyConfigTable>
+  <!-- 普通怪：基础怪，提高攻防/血量，避免被秒，同时能打炮塔 -->
+  <EnemyConfig>
+    <TowerType>3</TowerType>
+    <DeployableType>1</DeployableType>
+    <AttackRangeShape>0</AttackRangeShape>
+    <MaxHp>120</MaxHp>       <!-- 从100→120，提高生存时间 -->
+    <Defense>10</Defense>    <!-- 从5→10，减伤约9%，不被炮塔全额伤害 -->
+    <Attack>12</Attack>      <!-- 从10→12，打炮塔有有效伤害 -->
+    <AttackInterval>1</AttackInterval>
+    <MoveSpeed>3</MoveSpeed>
+    <RotateSpeed>20</RotateSpeed>
+    <AttackRangeLength>6</AttackRangeLength>
+    <AttackRangeWidth>6</AttackRangeWidth>
+    <AttackRangeHeight>6</AttackRangeHeight>
+    <AttackRangeRadius>4</AttackRangeRadius>
+  </EnemyConfig>
+
+  <!-- 重甲怪：高防高血，大幅提高攻防，强化肉度和威胁性 -->
+  <EnemyConfig>
+    <TowerType>4</TowerType>
+    <DeployableType>1</DeployableType>
+    <AttackRangeShape>0</AttackRangeShape>
+    <MaxHp>400</MaxHp>       <!-- 从300→400，提高肉度 -->
+    <Defense>30</Defense>    <!-- 从20→30，减伤约23%，炮塔需要多次攻击 -->
+    <Attack>20</Attack>      <!-- 从15→20，高伤害，对炮塔有明显威胁 -->
+    <AttackInterval>2.5</AttackInterval>
+    <MoveSpeed>1.5</MoveSpeed>
+    <RotateSpeed>20</RotateSpeed>
+    <AttackRangeLength>6</AttackRangeLength>
+    <AttackRangeWidth>6</AttackRangeWidth>
+    <AttackRangeHeight>6</AttackRangeHeight>
+    <AttackRangeRadius>4</AttackRangeRadius>
+  </EnemyConfig>
+
+  <!-- 快速怪：高速度，小幅提高攻防/血量，保证骚扰威胁 -->
+  <EnemyConfig>
+    <TowerType>5</TowerType>
+    <DeployableType>1</DeployableType>
+    <AttackRangeShape>0</AttackRangeShape>
+    <MaxHp>60</MaxHp>       <!-- 从50→60，避免被秒，保留脆的定位 -->
+    <Defense>5</Defense>    <!-- 从2→5，小幅提高减伤，不被全额伤害 -->
+    <Attack>10</Attack>      <!-- 从8→10，骚扰有有效伤害 -->
+    <AttackInterval>0.8</AttackInterval>
+    <MoveSpeed>6</MoveSpeed>
+    <RotateSpeed>20</RotateSpeed>
+    <AttackRangeLength>6</AttackRangeLength>
+    <AttackRangeWidth>6</AttackRangeWidth>
+    <AttackRangeHeight>6</AttackRangeHeight>
+    <AttackRangeRadius>4</AttackRangeRadius>
+  </EnemyConfig>
+</EnemyConfigTable>
